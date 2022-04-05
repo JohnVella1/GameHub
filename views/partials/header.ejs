@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <% if (typeof attentionAjouteLaCSSDiceRoller !== 'undefined' &&  attentionAjouteLaCSSDiceRoller === true) { %>
+    <link rel="stylesheet" href="/css/diceRoller.css">
+  <% } %>
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">GameHub</a>
+    </h1>
+    <nav>
+      
+      <ul>
+        <% for (const game of locals.games) { %>
+          <li>
+            <!-- On boucle sur notre liste de jeux pour générer les liens -->
+            <a href="/game/<%= game.name %>">
+              <%= game.title %>
+            </a>
+          </li>
+        <% } %>
+
+        <li>
+          <a href="/search">Recherche</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>

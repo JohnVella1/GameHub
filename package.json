@@ -1,0 +1,24 @@
+{
+  "name": "atelier",
+  "version": "1.0.0",
+  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-XIII/S03E06-atelier-duo-GameHub-olivier-oclock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-XIII/S03E06-atelier-duo-GameHub-olivier-oclock/issues"
+  },
+  "homepage": "https://github.com/O-clock-XIII/S03E06-atelier-duo-GameHub-olivier-oclock#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

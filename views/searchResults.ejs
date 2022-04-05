@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %>
+
+<h3>Résultat de la recherche</h3>
+
+<% if (gameFound === undefined) {%>
+
+    Nous n'avons trouvé <strong>aucun</strong> jeu correspondant à votre recherche
+
+<% } else {%>
+
+    <div>
+        Nous avons trouvé un jeu : <%= gameFound.title %>
+    </div>
+    <div>
+        Pour y jouer : 
+        <a href="/game/<%= gameFound.name%>">
+            <%= gameFound.title %>
+        </a>
+    </div>
+<% } %> 
+<%- include('partials/footer.ejs') %>
